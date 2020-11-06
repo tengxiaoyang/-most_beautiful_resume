@@ -1,0 +1,202 @@
+.main {
+  background: #F8F8F8;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+.top {
+  height: 517rpx;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.wallpaper {
+  width: 100%;
+  height: 100%;
+}
+.wallpaper_shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 258px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+}
+.top .user-outside {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.top .user {
+  width: 167rpx;
+  height: 412rpx;
+  position: relative;
+  top: -150px;
+  align-items: center;
+  border: 1px solid #000;
+}
+.top .user .user_bottom {
+  display: inline-block;
+  width: 167rpx;
+  height: 167rpx;
+}
+.user-icon-img {
+  width: 163rpx;
+  height: 163rpx;
+  border-radius: 167rpx;
+  border: 2px solid #fff;
+}
+.top .user .user_top {
+  position: relative;
+  display: inline-block;
+  width: 167rpx;
+  height: 142rpx;
+  margin: 0 0 32px 0;
+}
+.username {
+  position: relative;
+  display: block;
+  width: 167rpx;
+  height: 53rpx;
+  line-height: 50rpx;
+  color: #fff;
+  font-size: 55rpx;
+  border-bottom: 4rpx solid #fff;
+  padding: 0 0 9px 0;
+  margin: 0 0 18px 0;
+}
+.user_top .job_intention {
+  display: block;
+  position: relative;
+  width: 167rpx;
+  height: 30rpx;
+  text-align: center;
+  line-height: 30rpx;
+  color: #fff;
+  font-size: 33rpx;
+  margin: 8px 0 0 0;
+}
+.top button {
+  text-align: center;
+  line-height: 74px;
+  font-size: 32rpx;
+  position: relative;
+  top: -84rpx;
+  width: 148rpx!important;
+  height: 148rpx;
+  border-radius: 74rpx;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.middle {
+  position: relative;
+  margin: 74px 0 0 0;
+  height: 250rpx;
+}
+.bottom {
+  position: relative;
+  margin: 74px 0 0 0;
+  height: 250rpx;
+}
+.window_title_outside {
+  width: 100%;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #000;
+}
+.window_title_outside .window_title_inside {
+  width: 90%;
+  height: 96rpx;
+  border: 1px solid #000;
+}
+.window_title_inside-text {
+  width: 97%;
+  height: 50rpx;
+  border: 1px solid #000;
+  border-left: 4px solid #000;
+  padding: 4px 0 4px 4px;
+}
+.window_title_inside-horizontal_line {
+  width: 100%;
+  border-bottom: 4rpx solid #A0A0A0;
+  margin: 6px 0 0 0;
+}
+.window {
+  width: 100%;
+  height: 296rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+.other_window {
+  width: 100%;
+  height: 191rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+.window-outside {
+  width: 90%;
+  border: 1px solid;
+}
+.window-inside {
+  width: 100%;
+  height: 58rpx;
+  display: flex;
+  align-items: center;
+}
+.window-inside-center {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+.window_content-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px 0 0;
+}
+.window-left {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #000;
+  font-size: 31rpx;
+  margin: 0 10rpx 0 0;
+}
+.window-middle {
+  display: inline-block;
+}
+.window-right {
+  display: inline-block;
+  width: 90rpx;
+  height: 100%;
+  position: relative;
+  color: #606060;
+  font-size: 22rpx;
+  margin: 0 0 0 10rpx;
+}
+.window-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+.progress_bar {
+  width: 97%;
+  height: 60%;
+  background: #F0F0F0;
+  border-radius: 10rpx;
+}
+

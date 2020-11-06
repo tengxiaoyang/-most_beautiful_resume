@@ -1,0 +1,95 @@
+<view class="main">
+  <view class="top">
+    <image class="wallpaper" src="/images/Front-end.jpg"></image>
+    <view class="wallpaper_shade"></view>
+    <view class="user-outside">
+      <view class="user" wx:if="{{have_user_info}}">
+        <view class="user_top">
+          <text class="username">{{username}}</text>
+          <view class="job_intention">{{job_intention}}</view>
+        </view>
+        <view class="user_bottom">        
+          <view class="user-icon">
+            <image class="user-icon-img" src="{{user_icon}}" mode="aspectFill"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    
+    <button class="top-icon-button" wx:if="{{!have_user_info}}" bindgetuserinfo="get_user_info" type="primary" open-type="getUserInfo" lang="zh_CN">微信登录
+    </button>
+  </view>
+  <view class="middle">
+    <view class="window_title_outside">
+      <view class="window_title_inside">
+        <view class="window_title_inside-text">个人信息</view>        
+        <view class="window_title_inside-horizontal_line"></view>
+      </view>
+    </view>
+    <view class="window">
+      <view class="window-outside">
+        <view class="window-inside">
+          <view class="window-inside-center">
+            <image class="window_content-icon" src="/images/user.png"></image>
+            <text class="window-left">{{name}}/{{gender}}/{{year_of_birth}}</text>
+          </view>
+        </view>
+        <view class="window-inside">
+          <view class="window-inside-center">
+            <image class="window_content-icon" src="/images/user.png"></image>
+            <text class="window-left">学历</text>
+          </view>
+        </view>
+        <view class="window-inside">
+          <view class="window-inside-center">
+            <image class="window_content-icon" src="/images/user.png"></image>
+            <text class="window-left">邮箱</text>
+          </view>
+        </view>
+        <view class="window-inside">
+          <view class="window-inside-center">
+            <image class="window_content-icon" src="/images/user.png"></image>
+            <text class="window-left">邮箱</text>
+          </view>
+        </view>
+        <view class="window-inside">
+          <view class="window-inside-center">
+            <image class="window_content-icon" src="/images/user.png"></image>
+            <text class="window-left">邮箱</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="window_title_outside">
+      <view class="window_title_inside">
+        <view class="window_title_inside-text">技术方向</view>  
+        <view class="window_title_inside-horizontal_line"></view>
+      </view>
+    </view>
+    <view class="other_window">
+      <view class="window-outside">
+        <view class="window-inside">
+          <view class="window-inside-center">
+            <image class="window_content-icon" src="/images/user.png"></image>
+            <text class="window-left">熟悉</text>
+          </view>
+        </view>
+        <view class="window-inside">
+          <view class="window-inside-center">
+            <image class="window_content-icon" src="/images/user.png"></image>
+            <text class="window-left">熟悉</text>
+          </view>
+        </view>
+        <view class="window-inside">
+          <view class="window-inside-center">
+            <image class="window_content-icon" src="/images/user.png"></image>
+            <text class="window-left">有</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

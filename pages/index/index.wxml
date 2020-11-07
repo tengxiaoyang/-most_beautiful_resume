@@ -5,7 +5,9 @@
     <view class="user-outside">
       <view class="user" wx:if="{{have_user_info}}">
         <view class="user_top">
-          <text class="username">{{username}}</text>
+          <view class="username_outside">
+            <text class="username">{{username}}</text>
+          </view>
           <view class="job_intention">{{job_intention}}</view>
         </view>
         <view class="user_bottom">        
@@ -31,31 +33,31 @@
         <view class="window-inside">
           <view class="window-inside-center">
             <image class="window_content-icon" src="/images/user.png"></image>
-            <text class="window-left">{{name}}/{{gender}}/{{year_of_birth}}</text>
+            <text class="window-left">{{name}} / {{gender}} / {{year_of_birth}}</text>
           </view>
         </view>
         <view class="window-inside">
           <view class="window-inside-center">
-            <image class="window_content-icon" src="/images/user.png"></image>
-            <text class="window-left">学历</text>
+            <image class="window_content-icon" src="/images/educational_history.png"></image>
+            <text class="window-left">{{educational_history}} / {{school}}</text>
           </view>
         </view>
         <view class="window-inside">
           <view class="window-inside-center">
-            <image class="window_content-icon" src="/images/user.png"></image>
-            <text class="window-left">邮箱</text>
+            <image class="window_content-icon" src="/images/mail_box.png"></image>
+            <text class="window-left">邮箱：{{mail_box}}</text>
           </view>
         </view>
         <view class="window-inside">
           <view class="window-inside-center">
-            <image class="window_content-icon" src="/images/user.png"></image>
-            <text class="window-left">邮箱</text>
+            <image class="window_content-icon" src="/images/github.png"></image>
+            <text class="window-left">GitHub：{{github}}</text>
           </view>
         </view>
         <view class="window-inside">
           <view class="window-inside-center">
-            <image class="window_content-icon" src="/images/user.png"></image>
-            <text class="window-left">邮箱</text>
+            <image class="window_content-icon" src="/images/expected_position.png"></image>
+            <text class="window-left">期望职位：{{expected_position}}</text>
           </view>
         </view>
       </view>
@@ -72,20 +74,20 @@
       <view class="window-outside">
         <view class="window-inside">
           <view class="window-inside-center">
-            <image class="window_content-icon" src="/images/user.png"></image>
-            <text class="window-left">熟悉</text>
+            <!-- <image class="window_content-icon" src="/images/user.png"></image> -->
+            <text class="window-left">*{{basics}}</text>
           </view>
         </view>
         <view class="window-inside">
           <view class="window-inside-center">
-            <image class="window_content-icon" src="/images/user.png"></image>
-            <text class="window-left">熟悉</text>
+            <!-- <image class="window_content-icon" src="/images/user.png"></image> -->
+            <text class="window-left">*{{framework}}</text>
           </view>
         </view>
         <view class="window-inside">
           <view class="window-inside-center">
-            <image class="window_content-icon" src="/images/user.png"></image>
-            <text class="window-left">有</text>
+            <!-- <image class="window_content-icon" src="/images/user.png"></image> -->
+            <text class="window-left">*{{other_skills}}</text>
           </view>
         </view>
       </view>

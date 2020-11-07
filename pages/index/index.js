@@ -13,12 +13,17 @@ Page({
     name: "滕晓阳",
     gender: "男",
     year_of_birth: "1997",
-    
-    I_liked: "0" + "/100",
-    have_been_collected: "0/20",
-    jokes_have_told: "0/5",
 
-    jokes_data: [],
+    educational_history: "本科",
+    school: "西北工业大学明德学院",
+    mail_box: "656877449@qq.com",
+    github: "https://github.com/tengxiaoyang",
+    expected_position: "web前端",
+
+    basics: "熟悉HTML、CSS、JS等web开发技术，熟悉页面布局",
+    framework: "熟悉react等主流框架开发",
+    other_skills: "有一定的数据结构和算法等计算机基础",
+
   },
   get_user_info: function(e) {
     if(e.detail.userInfo){

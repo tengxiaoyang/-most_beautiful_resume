@@ -6,7 +6,7 @@ Page({
    */
   data: {
     user_icon: "https://hbimg.huabanimg.com/bc4a96cf3ea27046c3f587cc1882943f666d4e7536db-JZTJN6_fw658/format/webp",
-    username: "新用户",
+    username: "点击输入用户名",
     job_intention: "前端工程师",
     have_user_info: false,
 

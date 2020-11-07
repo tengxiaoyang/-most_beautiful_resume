@@ -34,7 +34,7 @@
         <view class="window-inside">
           <view class="window-inside-center">
             <image class="window_content-icon" src="/images/user.png"></image>
-            <text class="window-left">{{name}} / {{gender}} / {{year_of_birth}}</text>
+            <text class="window-left">{{username}} / {{gender}} / {{year_of_birth}}</text>
           </view>
         </view>
         <view class="window-inside">

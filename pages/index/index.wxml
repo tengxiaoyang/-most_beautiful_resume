@@ -1,7 +1,8 @@
 <view class="main">
   <view class="top">
-    <image class="wallpaper" src="/images/Front-end.jpg"></image>
-    <view class="wallpaper_shade"></view>
+    <image class="wallpaper" src="/images/Front-end.jpg">
+      <view class="wallpaper_shade"></view>
+    </image>
     <view class="user-outside">
       <view class="user" wx:if="{{have_user_info}}">
         <view class="user_top">

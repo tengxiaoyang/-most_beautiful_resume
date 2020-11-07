@@ -13,14 +13,14 @@
 }
 .wallpaper {
   width: 100%;
-  height: 100%;
+  height: 468rpx;
 }
 .wallpaper_shade {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 258px;
+  height: 468rpx;
   text-align: center;
   color: #fff;
   background-color: rgba(0,0,0,0.5);
@@ -32,10 +32,10 @@
 }
 .top .user {
   width: 500rpx;
-  height: 412rpx;
-  position: relative;
-  top: -150px;
-  align-items: center;
+  height: 458rpx;
+  position: absolute;
+  top: 181rpx;
+  z-index: 1;
 }
 .top .user .user_bottom {
   display: flex;
@@ -47,14 +47,14 @@
   width: 163rpx;
   height: 163rpx;
   border-radius: 167rpx;
-  border: 2px solid #fff;
+  border: 4rpx solid #fff;
 }
 .top .user .user_top {
   position: relative;
   display: inline-block;
   width: 500rpx;
   height: 142rpx;
-  margin: 0 0 32px 0;
+  margin: 0 0 64rpx 0;
 }
 .username_outside {
   display: flex;
@@ -65,27 +65,27 @@
   position: relative;
   display: block;
   height: 53rpx;
-  line-height: 50rpx;
+  line-height: 76rpx;
   color: #fff;
   font-size: 55rpx;
   border-bottom: 3rpx solid #fff;
-  padding: 0 0 9px 0;
-  margin: 0 0 18px 0;
+  padding: 0 0 48rpx 0;
+  margin: 0 0 36rpx 0;
 }
 .user_top .job_intention {
   display: block;
   position: relative;
   width: 500rpx;
-  height: 30rpx;
+  height: 47rpx;
   text-align: center;
   line-height: 30rpx;
   color: #fff;
   font-size: 33rpx;
-  margin: 8px 0 0 0;
+  margin: 16rpx 0 0 0;
 }
 .top button {
   text-align: center;
-  line-height: 74px;
+  line-height: 148rpx;
   font-size: 32rpx;
   position: relative;
   top: -84rpx;
@@ -98,17 +98,17 @@
 }
 .middle {
   position: relative;
-  margin: 74px 0 0 0;
+  margin: 148rpx 0 0 0;
   height: 250rpx;
 }
 .bottom {
   position: relative;
-  margin: 89px 0 0 0;
+  margin: 178rpx 0 0 0;
   height: 250rpx;
 }
 .window_title_outside {
   width: 100%;
-  height: 48px;
+  height: 96rpx;
   display: flex;
   justify-content: center;
 }
@@ -120,13 +120,13 @@
 .window_title_inside-text {
   width: 97%;
   height: 50rpx;
-  border-left: 4px solid #000;
-  padding: 4px 0 4px 4px;
+  border-left: 8rpx solid #000;
+  padding: 8rpx 0 8rpx 8rpx;
 }
 .window_title_inside-horizontal_line {
   width: 100%;
   border-bottom: 4rpx solid #A0A0A0;
-  margin: 6px 0 0 0;
+  margin: 12rpx 0 0 0;
 }
 .window {
   width: 100%;
@@ -160,9 +160,9 @@
 }
 .window_content-icon {
   display: inline-block;
-  width: 25px;
-  height: 23px;
-  margin: 0 4px 0 0;
+  width: 50rpx;
+  height: 46rpx;
+  margin: 0 8rpx 0 0;
 }
 .window-left {
   display: inline-block;

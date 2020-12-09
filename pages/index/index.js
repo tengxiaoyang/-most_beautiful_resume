@@ -5,8 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    user_icon: "https://hbimg.huabanimg.com/bc4a96cf3ea27046c3f587cc1882943f666d4e7536db-JZTJN6_fw658/format/webp",
-    username: "点击输入用户名",
+    user_icon: "/images/user_icon.jpg",
+    username: "滕晓阳",
     job_intention: "前端工程师",
     have_user_info: false,
 
@@ -21,8 +21,58 @@ Page({
     expected_position: "web前端",
 
     basics: "熟悉HTML、CSS、JS等web开发技术，熟悉页面布局",
-    framework: "熟悉react等主流框架开发",
+    framework: "熟悉Vue等主流框架开发",
     other_skills: "有一定的数据结构和算法等计算机基础",
+
+    list:[
+      {listName:'列表1',
+       item:[{
+         itemName:'子列表1-1',
+         content:'1-1中的内容',
+         time: '2015-05-06'
+       }, {
+           itemName: '子列表1-2',
+           content: '1-2中的内容',
+           time: '2015-04-13'
+       }, {
+           itemName: '子列表1-3',
+           content: '1-3中的内容',
+           time: '2015-12-06'
+       }]
+      }, 
+      {
+        listName: '列表2',
+        item: [{
+          itemName: '子列表2-1',
+          content: '2-1中的内容',
+          time: '2017-05-06'
+        }, {
+          itemName: '子列表2-2',
+          content: '2-2中的内容',
+          time: '2015-08-06'
+        }, {
+          itemName: '子列表2-3',
+          content: '2-3中的内容',
+          time: '2015-11-06'
+        }]
+      }, {
+        listName: '列表3',
+        item: [{
+          itemName: '子列表3-1',
+          content: '3-1中的内容',
+          time: '2015-05-15'
+        }, {
+          itemName: '子列表3-2',
+          content: '3-2中的内容',
+          time: '2015-05-24'
+        }, {
+          itemName: '子列表1-3',
+          content: '3-3中的内容',
+          time: '2015-05-30'
+        }]
+      }
+    ]
+    
 
   },
   get_user_info: function(e) {
@@ -36,38 +86,94 @@ Page({
       })
     }
   },
+  navigateToMiniProgram(){
+    wx.navigateToMiniProgram({
+      appId: 'wx1fa8a5689b3ffd69',
+      extraData: {
+        
+      },
+      envVersion: 'develop',
+      success(res) {
+        
+      }
+    })
+  },
+
+    //点击最外层列表展开收起
+    listTap(e){
+      console.log('触发了最外层');
+      let Index = e.currentTarget.dataset.parentindex,//获取点击的下标值
+          list=this.data.list;
+      list[Index].show = !list[Index].show || false;//变换其打开、关闭的状态
+      if (list[Index].show){//如果点击后是展开状态，则让其他已经展开的列表变为收起状态
+        this.packUp(list,Index);
+      }
+  
+      this.setData({
+        list
+      });
+    },
+    //点击里面的子列表展开收起
+    listItemTap(e){
+      let parentindex = e.currentTarget.dataset.parentindex,//点击的内层所在的最外层列表下标
+          Index=e.currentTarget.dataset.index,//点击的内层下标
+          list=this.data.list;
+      console.log(list[parentindex].item,Index);
+      list[parentindex].item[Index].show = !list[parentindex].item[Index].show||false;//变换其打开、关闭的状态
+      if (list[parentindex].item[Index].show){//如果是操作的打开状态，那么就让同级的其他列表变为关闭状态，保持始终只有一个打开
+        for (let i = 0, len = list[parentindex].item.length;i<len;i++ ){
+          if(i!=Index){
+            list[parentindex].item[i].show=false;
+          }
+  
+        }
+      }
+      this.setData({list});
+    },
+    //让所有的展开项，都变为收起
+    packUp(data,index){
+      for (let i = 0, len = data.length; i < len; i++) {//其他最外层列表变为关闭状态
+        if(index!=i){
+          data[i].show = false;
+          for (let j=0;j<data[i].item.length;j++){//其他所有内层也为关闭状态
+              data[i].item[j].show=false;
+          }
+        }
+      }
+    },
+    
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {    
 
-    if (app.globalData.userInfo) {
-      this.setData({
-        user_icon: app.globalData.userInfo.avatarUrl,
-        username: app.globalData.userInfo.nickName,
-        have_user_info: true
-      })
-    } else if (this.data.canIUse){
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          user_icon: app.globalData.userInfo.avatarUrl,
-          username: app.globalData.userInfo.nickName,
-          have_user_info: true
-        })
-      }
-    } else {
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            user_icon: app.globalData.userInfo.avatarUrl,
-            username: app.globalData.userInfo.nickName,
-            have_user_info: true
-          })
-        }
-      })
-    }
+    // if (app.globalData.userInfo) {
+    //   this.setData({
+    //     user_icon: app.globalData.userInfo.avatarUrl,
+    //     username: app.globalData.userInfo.nickName,
+    //     have_user_info: true
+    //   })
+    // } else if (this.data.canIUse){
+    //   app.userInfoReadyCallback = res => {
+    //     this.setData({
+    //       user_icon: app.globalData.userInfo.avatarUrl,
+    //       username: app.globalData.userInfo.nickName,
+    //       have_user_info: true
+    //     })
+    //   }
+    // } else {
+    //   wx.getUserInfo({
+    //     success: res => {
+    //       app.globalData.userInfo = res.userInfo
+    //       this.setData({
+    //         user_icon: app.globalData.userInfo.avatarUrl,
+    //         username: app.globalData.userInfo.nickName,
+    //         have_user_info: true
+    //       })
+    //     }
+    //   })
+    // }
   },
 
   previewImage: function(e) {

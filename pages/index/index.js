@@ -25,52 +25,61 @@ Page({
     other_skills: "有一定的数据结构和算法等计算机基础",
 
     list:[
-      {listName:'列表1',
-       item:[{
-         itemName:'子列表1-1',
-         content:'1-1中的内容',
-         time: '2015-05-06'
-       }, {
-           itemName: '子列表1-2',
-           content: '1-2中的内容',
-           time: '2015-04-13'
-       }, {
-           itemName: '子列表1-3',
-           content: '1-3中的内容',
-           time: '2015-12-06'
-       }]
+      {
+        listName:'微信小程序 看段子 已上线',
+        item:[
+          {
+            introduce:'看段子的小程序，已在微信上线。具有点赞、收藏、登录等功能。添加了积分商城、个人信息等页面。',
+            tech:'wxml、wxss、js、使用缓存存储数据',
+            github:'https://github.com/tengxiaoyang/ReadJokes',
+            name: "看段子"
+          }
+        ]
       }, 
       {
-        listName: '列表2',
-        item: [{
-          itemName: '子列表2-1',
-          content: '2-1中的内容',
-          time: '2017-05-06'
-        }, {
-          itemName: '子列表2-2',
-          content: '2-2中的内容',
-          time: '2015-08-06'
-        }, {
-          itemName: '子列表2-3',
-          content: '2-3中的内容',
-          time: '2015-11-06'
-        }]
-      }, {
-        listName: '列表3',
-        item: [{
-          itemName: '子列表3-1',
-          content: '3-1中的内容',
-          time: '2015-05-15'
-        }, {
-          itemName: '子列表3-2',
-          content: '3-2中的内容',
-          time: '2015-05-24'
-        }, {
-          itemName: '子列表1-3',
-          content: '3-3中的内容',
-          time: '2015-05-30'
-        }]
-      }
+        listName:'仿美团移动端 使用了vue-vuex',
+        item:[
+          {
+            introduce:'看段子的小程序，已在微信上线。具有点赞、收藏、登录等功能。添加了积分商城、个人信息等页面。',
+            tech:'wxml、wxss、js、使用缓存存储数据',
+            github:'https://github.com/tengxiaoyang/ReadJokes',
+            name: "看段子"
+          }
+        ]
+      }, 
+      {
+        listName:'仿腾讯视频移动端 使用vue实践了组件化',
+        item:[
+          {
+            introduce:'看段子的小程序，已在微信上线。具有点赞、收藏、登录等功能。添加了积分商城、个人信息等页面。',
+            tech:'wxml、wxss、js、使用缓存存储数据',
+            github:'https://github.com/tengxiaoyang/ReadJokes',
+            name: "看段子"
+          }
+        ]
+      }, 
+      {
+        listName:'仿今日头条移动端 使用了vue',
+        item:[
+          {
+            introduce:'看段子的小程序，已在微信上线。具有点赞、收藏、登录等功能。添加了积分商城、个人信息等页面。',
+            tech:'wxml、wxss、js、使用缓存存储数据',
+            github:'https://github.com/tengxiaoyang/ReadJokes',
+            name: "看段子"
+          }
+        ]
+      }, 
+      {
+        listName:'仿拉勾PC端 使用了HTML、CSS',
+        item:[
+          {
+            introduce:'看段子的小程序，已在微信上线。具有点赞、收藏、登录等功能。添加了积分商城、个人信息等页面。',
+            tech:'wxml、wxss、js、使用缓存存储数据',
+            github:'https://github.com/tengxiaoyang/ReadJokes',
+            name: "看段子"
+          }
+        ]
+      }, 
     ]
     
 

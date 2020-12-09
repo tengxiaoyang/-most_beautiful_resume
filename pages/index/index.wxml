@@ -96,33 +96,49 @@
     </view>
   </view>
 
-  <view class="open_read_jokes" bindtap='navigateToMiniProgram'>点击打开小程序</view>
+  <!-- <view class="open_read_jokes" bindtap='navigateToMiniProgram'>点击打开小程序</view> -->
 
-  <view class='list_box' wx:for='{{list}}' wx:key='this' wx:for-item='parentItem' wx:for-index='parentIndex' >
-    <view class='list'>
-      <view class='list_name_box' catchtap='listTap' data-parentindex='{{parentIndex}}'>
-        <text class='list_item_name'>{{parentItem.listName}}</text>
-        <image src='/images/down.png' class='icon_down {{parentItem.show&&"icon_down_rotate"}}'></image>
+  <view class="project_experience">
+    <view class="window_title_outside">
+      <view class="window_title_inside">
+        <view class="window_title_inside-text">项目经历</view>  
+        <view class="window_title_inside-horizontal_line"></view>
       </view>
-      <view class='list_item_box' wx:if='{{parentItem.show}}'>
-        <view class='list_item' wx:for='{{parentItem.item}}' wx:key='this' catchtap='listItemTap' data-index='{{index}}'  data-parentindex='{{parentIndex}}'>
-          <view class='list_item_name_box'>
-            <text class='list_item_name'>{{item.itemName}}</text>
-            <image src='/images/down.png' class='icon_down {{item.show&&"icon_down_rotate"}}'></image>
-          </view>
-          <view class='other_box' wx:if='{{item.show}}'>
-            <view class='other'>
-              <text class='other_title'>内容：</text>
-              <text class='other_text'>{{item.content}}</text>
-            </view>
-            <view class='other'>
-              <text class='other_title'>时间：</text>
-              <text class='other_text'>{{item.time}}</text>
+    </view>
+
+    <view class='list_box' wx:for='{{list}}' wx:key='this' wx:for-item='parentItem' wx:for-index='parentIndex' >
+      <view class='list'>
+        <view class='list_name_box' catchtap='listTap' data-parentindex='{{parentIndex}}'>
+          <text class='list_item_name'>{{parentItem.listName}}</text>
+          <image src='/images/down.png' class='icon_down {{parentItem.show&&"icon_down_rotate"}}'></image>
+        </view>
+        <view class='list_item_box' wx:if='{{parentItem.show}}'>
+          <view class='list_item' wx:for='{{parentItem.item}}' wx:key='this' catchtap='listItemTap' data-index='{{index}}'  data-parentindex='{{parentIndex}}'>
+            <view class='list_item_name_box'>
+              <view>
+                <text>介绍：</text>
+                <text>{{parentItem.item[index].introduce}}</text>
+              </view>
+              <view>
+                <text>技术：</text>
+                <text>{{parentItem.item[index].tech}}</text>
+              </view>
+              <view>
+                <text>Github：</text>
+                <text>{{parentItem.item[index].github}}</text>
+              </view>
+              <view wx:if="{{parentItem.item[parentIndex].name==='看段子'}}">
+                <text>去看看：</text>
+                <view class="open_read_jokes" 
+                  bindtap='navigateToMiniProgram' 
+                >点击打开小程序</view>
+              </view>
             </view>
           </view>
         </view>
       </view>
     </view>
+    
   </view>
   
 </view>

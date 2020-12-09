@@ -205,6 +205,8 @@
 }
 
 .list_name_box{
+  margin: 0 auto;
+  width: 90%;
   background: #fff;
   border-bottom: 1px solid #efefef;
   display: flex;
@@ -213,13 +215,19 @@
   padding: 0 25rpx;
   font-size: 32rpx;
 }
+.list_item_box {
+  margin: 0 auto;
+  width: 90%;
+}
 .list_item_name{
   flex: 1;
+  font-size: 27rpx;
 }
 .icon_down{
-  width: 35rpx;
-  height:35rpx;
+  width: 22rpx;
+  height:22rpx;
   transition:transform  0.3s;
+  transform:rotate(-90deg);
 }
 /* .list_item_box{
   height: 0;
@@ -232,10 +240,10 @@
 .list_item_name_box{
   background: #fff;
   font-size: 30rpx;
-  height: 80rpx;
-  display: flex;
-  align-items: center;
-  padding: 0 25rpx 0 50rpx;
+  /* height: 80rpx; */
+  /* display: flex;
+  align-items: center; */
+  /* padding: 0 25rpx 0 50rpx; */
 }
 .other{
   display: flex;
@@ -246,6 +254,31 @@
   color: #666;
 }
 .icon_down_rotate{
-  transform:rotate(180deg);
+  transform:rotate(0deg);
 }
 
+
+.list_item_name_box view text {
+  display: block;
+  margin: 20rpx 0 0 0;
+  word-break:break-all;
+  font-size: 27rpx;
+}
+.list_item_name_box view view {
+  display: block;
+  margin: 20rpx 0 0 0;
+}
+
+
+.project_experience {
+  position: relative;
+  margin: 55rpx 0 0 0;
+  height: 250rpx;
+}
+
+.list_box {
+  border: 1px solid #999;
+  width: calc(100% - 83rpx);
+  margin: 21rpx auto;
+  border-radius: 7px;
+}

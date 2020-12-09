@@ -21,7 +21,7 @@ Page({
     expected_position: "web前端",
 
     basics: "熟悉HTML、CSS、JS等web开发技术，熟悉页面布局",
-    framework: "熟悉Vue等主流框架开发",
+    framework: "熟悉vue等主流框架开发",
     other_skills: "有一定的数据结构和算法等计算机基础",
 
     list:[

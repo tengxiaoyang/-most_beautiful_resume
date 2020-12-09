@@ -222,6 +222,7 @@
 .list_item_name{
   flex: 1;
   font-size: 27rpx;
+  height: 39rpx;
 }
 .icon_down{
   width: 22rpx;
@@ -260,13 +261,15 @@
 
 .list_item_name_box view text {
   display: block;
-  margin: 20rpx 0 0 0;
+  margin: 20rpx 0 20rpx 0;
   word-break:break-all;
   font-size: 27rpx;
 }
 .list_item_name_box view view {
   display: block;
-  margin: 20rpx 0 0 0;
+  margin: 20rpx 0 20rpx 0;
+  word-break: break-all;
+  font-size: 27rpx;
 }
 
 

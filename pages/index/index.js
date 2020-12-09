@@ -40,10 +40,9 @@ Page({
         listName:'仿美团移动端 使用了vue-vuex',
         item:[
           {
-            introduce:'看段子的小程序，已在微信上线。具有点赞、收藏、登录等功能。添加了积分商城、个人信息等页面。',
-            tech:'wxml、wxss、js、使用缓存存储数据',
-            github:'https://github.com/tengxiaoyang/ReadJokes',
-            name: "看段子"
+            introduce:'仿美团移动端的项目。具有首页、选择城市、团购详情、提交订单等页面。',
+            tech:'HTML、CSS、js、vue2、vue-router、组件化、vuex',
+            github:'https://github.com/tengxiaoyang/online-store'
           }
         ]
       }, 
@@ -51,10 +50,9 @@ Page({
         listName:'仿腾讯视频移动端 使用vue实践了组件化',
         item:[
           {
-            introduce:'看段子的小程序，已在微信上线。具有点赞、收藏、登录等功能。添加了积分商城、个人信息等页面。',
-            tech:'wxml、wxss、js、使用缓存存储数据',
-            github:'https://github.com/tengxiaoyang/ReadJokes',
-            name: "看段子"
+            introduce:'仿腾讯视频移动端的项目。具有首页、搜索页、视频详情页等页面。',
+            tech:'HTML、CSS、js、vue2、vue-router、组件化、vuex',
+            github:'https://github.com/tengxiaoyang/video'
           }
         ]
       }, 
@@ -62,10 +60,9 @@ Page({
         listName:'仿今日头条移动端 使用了vue',
         item:[
           {
-            introduce:'看段子的小程序，已在微信上线。具有点赞、收藏、登录等功能。添加了积分商城、个人信息等页面。',
-            tech:'wxml、wxss、js、使用缓存存储数据',
-            github:'https://github.com/tengxiaoyang/ReadJokes',
-            name: "看段子"
+            introduce:'仿今日头条移动端的项目。具有首页、新闻搜索页、新闻详情页等页面。',
+            tech:'HTML、CSS、js、vue2、vue-router',
+            github:'https://github.com/tengxiaoyang/news'
           }
         ]
       }, 
@@ -73,10 +70,9 @@ Page({
         listName:'仿拉勾PC端 使用了HTML、CSS',
         item:[
           {
-            introduce:'看段子的小程序，已在微信上线。具有点赞、收藏、登录等功能。添加了积分商城、个人信息等页面。',
-            tech:'wxml、wxss、js、使用缓存存储数据',
-            github:'https://github.com/tengxiaoyang/ReadJokes',
-            name: "看段子"
+            introduce:'仿拉勾PC端的项目。具有首页、搜索结果页等页面。',
+            tech:'HTML、CSS',
+            github:'https://github.com/tengxiaoyang/lagou'
           }
         ]
       }, 

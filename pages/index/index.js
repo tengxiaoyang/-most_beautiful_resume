@@ -41,7 +41,7 @@ Page({
         item:[
           {
             introduce:'仿美团移动端的项目。具有首页、选择城市、团购详情、提交订单等页面。',
-            tech:'HTML、CSS、js、vue2、vue-router、组件化、vuex',
+            tech:'HTML、CSS、js、vue2、vue-router、组件化、vuex、webpack',
             github:'https://github.com/tengxiaoyang/online-store'
           }
         ]
@@ -51,7 +51,7 @@ Page({
         item:[
           {
             introduce:'仿腾讯视频移动端的项目。具有首页、搜索页、视频详情页等页面。',
-            tech:'HTML、CSS、js、vue2、vue-router、组件化、vuex',
+            tech:'HTML、CSS、js、vue2、vue-router、组件化、vuex、webpack',
             github:'https://github.com/tengxiaoyang/video'
           }
         ]
@@ -61,7 +61,7 @@ Page({
         item:[
           {
             introduce:'仿今日头条移动端的项目。具有首页、新闻搜索页、新闻详情页等页面。',
-            tech:'HTML、CSS、js、vue2、vue-router',
+            tech:'HTML、CSS、js、vue2、vue-router、webpack',
             github:'https://github.com/tengxiaoyang/news'
           }
         ]

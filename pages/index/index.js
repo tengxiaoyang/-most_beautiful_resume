@@ -47,40 +47,40 @@ Page({
         ]
       }, 
       {
-        listName:'仿美团移动端 使用了vue-vuex',
+        listName:'移动端团购web app 使用了vue-vuex',
         item:[
           {
-            introduce:'仿美团移动端的项目。具有首页、选择城市、团购详情、提交订单等页面。',
+            introduce:'移动端团购web app的项目。具有首页、选择城市、团购详情、提交订单等页面。',
             tech:'HTML、CSS、js、vue2、vue-router、组件化、vuex、webpack',
             github:'https://github.com/tengxiaoyang/online-store'
           }
         ]
       }, 
       {
-        listName:'仿腾讯视频移动端 使用vue实践了组件化',
+        listName:'移动端视频播放web app 使用vue实践了组件化',
         item:[
           {
-            introduce:'仿腾讯视频移动端的项目。具有首页、搜索页、视频详情页等页面。',
+            introduce:'移动端视频播放web app的项目。具有首页、搜索页、视频详情页等页面。',
             tech:'HTML、CSS、js、vue2、vue-router、组件化、vuex、webpack',
             github:'https://github.com/tengxiaoyang/video'
           }
         ]
       }, 
       {
-        listName:'仿今日头条移动端 使用了vue',
+        listName:'移动端新闻web app 使用了vue',
         item:[
           {
-            introduce:'仿今日头条移动端的项目。具有首页、新闻搜索页、新闻详情页等页面。',
+            introduce:'移动端新闻web app的项目。具有首页、新闻搜索页、新闻详情页等页面。',
             tech:'HTML、CSS、js、vue2、vue-router、webpack',
             github:'https://github.com/tengxiaoyang/news'
           }
         ]
       }, 
       {
-        listName:'仿拉勾PC端 使用了HTML、CSS',
+        listName:'PC端求职招聘web app 使用了HTML、CSS',
         item:[
           {
-            introduce:'仿拉勾PC端的项目。具有首页、搜索结果页等页面。',
+            introduce:'PC端求职招聘web app的项目。具有首页、搜索结果页等页面。',
             tech:'HTML、CSS',
             github:'https://github.com/tengxiaoyang/lagou'
           }

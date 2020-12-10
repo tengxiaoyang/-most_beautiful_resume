@@ -37,6 +37,16 @@ Page({
         ]
       }, 
       {
+        listName:'微信小程序 最美简历',
+        item:[
+          {
+            introduce:'我的个人简历小程序。介绍了我的个人信息、技术方向和项目经历。',
+            tech:'wxml、wxss、js',
+            github:'https://github.com/tengxiaoyang/most_beautiful_resume'
+          }
+        ]
+      }, 
+      {
         listName:'仿美团移动端 使用了vue-vuex',
         item:[
           {
